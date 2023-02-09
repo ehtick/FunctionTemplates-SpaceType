@@ -38,7 +38,8 @@
   "element_types": [
     "http://prod-api.hypar.io/schemas/LevelElements",
     "http://prod-api.hypar.io/schemas/SpaceBoundary",
-    "http://prod-api.hypar.io/schemas/LevelVolume"
+    "http://prod-api.hypar.io/schemas/LevelVolume",
+    "http://prod-api.hypar.io/schemas/CirculationSegment"
   ],
   "cli_version": "1.2.0-alpha.8"
 }

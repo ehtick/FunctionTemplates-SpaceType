@@ -15,8 +15,9 @@ namespace SpaceTypeFunctionTemplate
         /// <returns>A SpaceTypeFunctionTemplateOutputs instance containing computed results and the model with any new elements.</returns>
         public static SpaceTypeFunctionTemplateOutputs Execute(Dictionary<string, Model> inputModels, SpaceTypeFunctionTemplateInputs input)
         {
+            Elements.Serialization.glTF.GltfExtensions.UseReferencedContentExtension = true;
             var output = new SpaceTypeFunctionTemplateOutputs();
-            LayoutStrategies.StandardLayoutOnAllLevels<LevelElements, LevelVolume, SpaceBoundary>(
+            LayoutStrategies.StandardLayoutOnAllLevels<LevelElements, LevelVolume, SpaceBoundary, CirculationSegment>(
                 "SPACE_TYPE", // the room type to apply to
                 inputModels,
                 input.Overrides,
