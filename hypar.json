@@ -13,6 +13,11 @@
       "autohide": false,
       "name": "Levels",
       "optional": true
+    },
+    {
+      "autohide": false,
+      "name": "Circulation",
+      "optional": true
     }
   ],
   "model_output": "SPACE_TYPE Layout",
